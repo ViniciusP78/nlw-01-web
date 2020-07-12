@@ -1,16 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'; // { useState }
 import './App.css';
+
+// JSX: Sintaxe de XML dentro do JavaScript
+
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello Warudo</h1>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
 export default App;
+
+// function App() {
+//   const [counter, setCounter] = useState(0); // [valor do estado, funcão para atualizar o estado da array]
+  
+//   function handleButtonCLick(){
+//     setCounter(counter + 1);
+//   }
+
+//   return (
+//     <div>
+//       <Header title="Hello World"/>
+
+//     <h1>{counter}</h1>
+//     <button type="button" onClick={handleButtonCLick}>Aumentar</button>
+//     </div>
+//   );
+// }
